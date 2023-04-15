@@ -1,0 +1,162 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.configuration{
+  padding: 2rem;
+  text-align: center;
+  background-color: #3148AD;
+}
+
+.configuration *{
+  padding: 1rem;
+  border: none;
+}
+
+.configuration input{
+  font-size: 1.2rem;
+  border-right: 1px solid black;
+}
+
+.configuration input:nth-child(1){
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.configuration button{
+  font-size: 1.2rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color:#9B68E4;
+  color: white;
+}
+
+#invader{
+  background-color: #6158CC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.palette{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius:15px;
+  background-color: rgba(0,0,0,0.25);
+  display: flex;
+  padding: 5px;
+}
+
+.palette * {
+  width: 30px;
+  height: 30px;
+  border-radius:15px;
+  margin: 5px;
+}
+
+.palette *.active {
+  border:2px solid grey;
+}
+
+.palette .white{
+  background-color: white;
+}
+
+.palette .black{
+  background-color: black;
+}
+
+.palette .yellow{
+  background-color: #FBC048;
+}
+
+.palette .green{
+  background-color: #79EA83;
+}
+
+.palette .red{
+  background-color: #da0209;
+}
+
+.palette .blue{
+  background-color: #002dde;
+}
+
+.palette .pink{
+  background-color: #ef61d9;
+}
+
+.palette .orange{
+  background-color: #da9b06;
+}
+
+.palette .purple{
+  background-color: #3f00de;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pixel{
+  border: 1px solid black;
+}
+
+.pixel--white{
+  background-color: white;
+}
+
+.pixel--black{
+  background-color: black;
+}
+
+.pixel--yellow{
+  background-color: #fbe348;
+}
+
+.pixel--green{
+  background-color: #79EA83;
+}
+
+.pixel--red{
+  background-color: #da0209;
+}
+
+.pixel--blue{
+  background-color: #002dde;
+}
+
+.pixel--pink{
+  background-color: #e179ea;
+}
+
+.pixel--orange{
+  background-color: #da9602;
+}
+
+.pixel--purple{
+  background-color: #7600de;
+}
+
+/* version aleternative */
+.grid-alt{
+  display: flex;
+  flex-direction: column;
+}
+
+.line-alt{
+  display: flex;
+}
