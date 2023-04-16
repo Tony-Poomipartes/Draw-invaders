@@ -60,16 +60,17 @@ body{
 }
 
 .palette * {
-  width: 30px;
-  height: 30px;
-  border-radius:15px;
+  width: 40px;
+  height: 40px;
+  border-radius:20px;
   margin: 5px;
 }
 
 .palette *.active {
-  border:2px solid grey;
+  border:5px solid grey;
 }
 
+/*?--------couleur proposé dans la palette----------*/
 .palette .white{
   background-color: white;
 }
@@ -99,13 +100,14 @@ body{
 }
 
 .palette .orange{
-  background-color: #da9b06;
+  background-color: #ffa200;
 }
 
 .palette .purple{
   background-color: #3f00de;
 }
 
+/*?--------grille et cadre des pixels----------*/
 .grid{
   display: flex;
   flex-wrap: wrap;
@@ -115,6 +117,7 @@ body{
   border: 1px solid black;
 }
 
+/*?--------couleur des pixels----------*/
 .pixel--white{
   background-color: white;
 }
@@ -144,19 +147,9 @@ body{
 }
 
 .pixel--orange{
-  background-color: #da9602;
+  background-color: #ffa200;
 }
 
 .pixel--purple{
   background-color: #7600de;
-}
-
-/* version aleternative */
-.grid-alt{
-  display: flex;
-  flex-direction: column;
-}
-
-.line-alt{
-  display: flex;
 }
